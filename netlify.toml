@@ -1,0 +1,22 @@
+[build]
+  publish = "client/dist" # Path to the built Vite app
+  command = "npm run build" # Command to build the Vite app
+
+[functions]
+  directory = "netlify/functions" # Directory for your Netlify functions
+
+[dev]
+  functions = "netlify/functions" # Directory for local function development
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[headers]
+  [[headers]]
+    for = "/*"
+    [headers.values]
+      X-Frame-Options = "DENY"
+      Content-Security-Policy = "default-src 'self';"

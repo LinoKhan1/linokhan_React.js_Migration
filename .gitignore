@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Environment variable files
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build output
+client/dist/
+
+# Netlify functions
+netlify/functions/**/node_modules/
+netlify/functions/**/.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

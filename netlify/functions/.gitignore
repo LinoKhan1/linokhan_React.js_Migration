@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variable files
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Ignore any build output from functions
+*.zip
+*.tgz
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
