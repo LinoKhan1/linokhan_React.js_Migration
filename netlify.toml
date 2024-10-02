@@ -14,9 +14,3 @@
   status = 200
   force = true
 
-[headers]
-  [[headers]]
-    for = "/*"
-    [headers.values]
-      X-Frame-Options = "DENY"
-      Content-Security-Policy = "default-src 'self';"
