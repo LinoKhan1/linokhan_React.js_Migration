@@ -1,5 +1,5 @@
 [build]
-  publish = "client/dist" # Path to the built Vite app
+  publish = "dist" # Path to the built Vite app
   command = "npm run build" # Command to build the Vite app
 
 [functions]
@@ -8,9 +8,5 @@
 [dev]
   functions = "netlify/functions" # Directory for local function development
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
+
 
