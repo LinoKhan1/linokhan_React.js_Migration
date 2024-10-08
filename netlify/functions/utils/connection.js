@@ -7,7 +7,7 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
 // MongoDB connection URI from environment variables
-const uri = process.env.MONGODB_URI || ""; // Update the variable name to match your .env setup
+const uri = process.env.ATLAS_URI || ""; // Update the variable name to match your .env setup
 
 // Log the connection string for debugging (make sure not to expose sensitive info in production)
 if (!uri) {

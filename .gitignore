@@ -24,3 +24,6 @@ Thumbs.db
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Local Netlify folder
+.netlify

@@ -1,9 +1,9 @@
-const API_URL = import.meta.env.VITE_BASE_API_URL;
+const API_URL = import.meta.env.VITE_BASE_API_URL; // Ensure this is correct
 
 export const fetchPosts = async () => {
     try {
-        console.log(`Fetching posts from: ${API_URL}/getPosts`);
-        const response = await fetch(`${API_URL}/getPosts`);
+        console.log(`Fetching posts from: ${API_URL}/posts`);
+        const response = await fetch(`${API_URL}/posts`);
         
         if (!response.ok) {
             console.error(`Error fetching posts: ${response.status} - ${response.statusText}`);
@@ -21,7 +21,7 @@ export const fetchPosts = async () => {
 
 export const fetchPostById = async (id) => {
     try {
-        const response = await fetch(`${API_URL}/getPosts/${id}`);
+        const response = await fetch(`${API_URL}/posts/${id}`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
