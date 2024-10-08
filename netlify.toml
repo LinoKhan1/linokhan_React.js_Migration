@@ -1,12 +1,7 @@
 [build]
-  publish = "dist" # Path to the built Vite app
-  command = "npm run build" # Command to build the Vite app
+  base = "client" # This tells Netlify where to find the package.json
+  command = "npm run build" # This command will run in the client directory
+  publish = "client/dist" # Adjust this to your build output directory
 
 [functions]
-  directory = "netlify/functions" # Directory for your Netlify functions
-
-[dev]
-  functions = "netlify/functions" # Directory for local function development
-
-
-
+  directory = "netlify/functions" # Ensure this is the correct path to your Netlify functions
