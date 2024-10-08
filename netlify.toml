@@ -1,7 +1,7 @@
 [build]
   base = "client" # This tells Netlify where to find the package.json
   command = "npm run build" # This command will run in the client directory
-  publish = "client/dist" # Adjust this to your build output directory
+  publish = "dist" # Adjust this to your build output directory
 
 [functions]
   directory = "netlify/functions" # Ensure this is the correct path to your Netlify functions
